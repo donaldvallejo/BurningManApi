@@ -7,7 +7,7 @@
 ## OR view the repo in Fancy vscode format
 [Fancy.](https://github1s.com/donaldvallejo/BurningManApi.git)
 
-# Docsify
+## Docsify
 
 docsify init ./docs
 <br>
@@ -16,8 +16,6 @@ docsify serve docs
 <br>
 
 [Link to the Docsify](http://bitbybit.codes/BurningManApi/)
-
-
 
 <br>
 `memories from the dust` is an API for finding and recording your times on la playa.
