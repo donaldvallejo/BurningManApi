@@ -1,10 +1,17 @@
 # Memories from the dust
 [Click to visit the site.](https://www.google.com/)
+
+## View the repo
+[Click to visit the repo.](https://github.com/donaldvallejo/BurningManApi.git)
+
+## OR view the repo in Fancy vscode format
+[Fancy.](https://github1s.com/donaldvallejo/BurningManApi.git)
+
 <br>
 `memories from the dust` is an API for finding and recording your times on la playa.
 <br>
 
->When going to "The BURN" many details can be missed or forgotten. this allows a way to keep those details and can be seen again later. 
+>When going to "The BURN" many details can be missed or forgotten. this allows a way to relive those details again.
 
  ## Names
 
