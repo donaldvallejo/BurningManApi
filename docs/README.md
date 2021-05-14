@@ -8,13 +8,17 @@
 [Fancy.](https://github1s.com/donaldvallejo/BurningManApi.git)
 
 # Docsify
->To install
+To install
+<br>
 docsify init ./docs
-
->To Run
+<br>
+To Run
+<br>
 docsify serve docs   
+<br>
+Or click this link
+<br>
 
->Or click this link
 [Docsify](http://bitbybit.codes/BurningManApi/)
 
 
