@@ -1,5 +1,5 @@
 # Memories from the dust
-[Click to visit the site.](https://www.google.com/)
+[Click to visit the site.]()
 
 # heroku links
 https://memoriesfromthedust.herokuapp.com/ | https://git.heroku.com/memoriesfromthedust.git

@@ -33,8 +33,13 @@ app.use(checkAuth);
 
 app.use(require('./controllers/posts.js'))
 
-app.listen(process.env.PORT, () => {
-  console.log(`Example app listening on port ${process.env.PORT}!`);
-});
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+    console.log('Gif Search listening on port localhost:3001!');
+})
+
+// app.listen(process.env.PORT, () => {
+//   console.log(`Example app listening on port ${process.env.PORT}!`);
+// });
 
 module.exports = app;
