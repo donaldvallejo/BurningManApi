@@ -1,8 +1,5 @@
 # Memories from the dust
-[Click to visit the site.]()
-
-# heroku links
-https://memoriesfromthedust.herokuapp.com/ | https://git.heroku.com/memoriesfromthedust.git
+[Click to visit the site.](https://www.google.com/)
 
 ## View the repo
 [Click to visit the repo.](https://github.com/donaldvallejo/BurningManApi.git)
@@ -11,12 +8,14 @@ https://memoriesfromthedust.herokuapp.com/ | https://git.heroku.com/memoriesfrom
 [Fancy.](https://github1s.com/donaldvallejo/BurningManApi.git)
 
 ## Docsify
+
 docsify init ./docs
 <br>
-docsify serve docs 
+
+docsify serve docs   
 <br>
-Or click this link
-[Docsify](http://bitbybit.codes/BurningManApi/#/)
+
+[Link to the Docsify](http://bitbybit.codes/BurningManApi/)
 
 <br>
 `memories from the dust` is an API for finding and recording your times on la playa.
