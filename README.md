@@ -12,7 +12,7 @@ https://memoriesfromthedust.herokuapp.com/ | https://git.heroku.com/memoriesfrom
 
 ## Docsify
 docsify init ./docs
-<hr>
+<br>
 docsify serve docs 
 
 <br>
