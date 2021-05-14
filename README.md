@@ -14,6 +14,9 @@ https://memoriesfromthedust.herokuapp.com/ | https://git.heroku.com/memoriesfrom
 docsify init ./docs
 <br>
 docsify serve docs 
+<br>
+# Or click this link
+[Docsify]
 
 <br>
 `memories from the dust` is an API for finding and recording your times on la playa.
