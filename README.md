@@ -15,8 +15,8 @@ docsify init ./docs
 <br>
 docsify serve docs 
 <br>
-# Or click this link
-[Docsify]
+Or click this link
+[Docsify](http://bitbybit.codes/BurningManApi/#/)
 
 <br>
 `memories from the dust` is an API for finding and recording your times on la playa.

@@ -20,9 +20,6 @@ describe("Web Page", function() {
       });
   });
 
-it("Should do somehting useful")
-expect(res).to.have.status(200);
-
   // // login
 // it("should be able to login", function(done) {
 // agent.post("/login")
