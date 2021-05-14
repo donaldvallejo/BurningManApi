@@ -4,7 +4,7 @@
 `memories from the dust` is an API for finding and recording your times on la playa.
 <br>
 
->When going to "The BURN" many details can be missed or forgotten. this allows a way to relive those details again.
+>When going to "The BURN" many details can be missed or forgotten. this allows a way to keep those details and can be seen again later. 
 
  ## Names
 
