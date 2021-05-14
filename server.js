@@ -1,5 +1,5 @@
 require('dotenv').config();
-
+var request = require('request');
 const express = require('express');
 var cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
@@ -31,12 +31,8 @@ var checkAuth = (req, res, next) => {
 };
 app.use(checkAuth);
 
-
-// TODO: Add each controller here, after all middleware is initialized.
-
-
-app.listen(3000, () => {
-    console.log('API listening on port http://localhost:3000!');
-  });
+app.listen(process.env.PORT, () => {
+  console.log(`Example app listening on port ${process.env.PORT}!`);
+});
 
 module.exports = app;
