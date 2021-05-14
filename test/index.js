@@ -3,6 +3,7 @@ const chai = require("chai");
 const chaiHttp = require("chai-http");
 const should = chai.should();
 
+chai.should();
 chai.use(chaiHttp);
 
 describe("Web Page", function() {
@@ -18,6 +19,9 @@ describe("Web Page", function() {
         return done(); 
       });
   });
+
+it("Should do somehting useful")
+expect(res).to.have.status(200);
 
   // // login
 // it("should be able to login", function(done) {

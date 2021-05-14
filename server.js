@@ -31,6 +31,8 @@ var checkAuth = (req, res, next) => {
 };
 app.use(checkAuth);
 
+app.use(require('./controllers/posts.js'))
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${process.env.PORT}!`);
 });

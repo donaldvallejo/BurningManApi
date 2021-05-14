@@ -7,60 +7,74 @@ const expect = chai.expect;
 
 // Import the Post model from our models folder so we
 // we can use it in our tests.
-const Post = require('../models/post');
+const Post = require('../models/posts');
 const server = require('../server');
-
-chai.should();
-chai.use(chaiHttp);
-
-describe('Posts', function() {
-it("Should do somehting useful")
-expect(res).to.have.status(200);
-});
 
 const express = require("express");
 const router = express.Router();
 
 const Name = require("../models/posts");
-const Auth = require("../models/auth");
+// const Auth = require("../models/auth");
 
 // Route to get all orders
-router.get('/', (req, res) => {
-    return res.send(`Hello whats your name`)
+// router.get('/', (req, res) => {
+//     return res.send(`Hello whats your name`)
+// })
+
+router.get("/", (req, res) => {
+  Name.find()
+    .then((name) => {
+      return res.json( name );
+    })
+    .catch((err) => {
+      throw err.message;
+    });
+});
+
+router.get("/:id", (req, res) => {
+  Name.findById(req.params.id)
+    .then((name) => {
+      return res.json( name );
+    })
+    .catch((err) => {
+      throw err.message;
+    });
+});
+
+router.post('/new', (req, res) => {
+  let name = req.body.name
+  const names = new Name({name})
+  names.save(function(err, post) {
+    if(err){
+      console.log("you fucked up")
+      return res.status(500).json(err)
+    } else {
+      return res.status(200).json(post)
+    }
+  }) 
 })
 
-// router.get("/", (req, res) => {
-//   Name.find()
-//     .then((name) => {
-//       return res.json({ name });
-//     })
-//     .catch((err) => {
-//       throw err.message;
-//     });
-// });
+router.delete('/:id', (req, res) => {
+  let id = req.params.id
+  Name.findOneAndDelete({_id:id}).then(deletion => {
+    console.log(deletion)
+    return res.json(deletion)
+  })
+  .catch((err) => {
+    throw err.message
+  })
+})
 
-// router.get("/:id", (req, res) => {
-//   Name.findById(req.params.id)
-//     .then((name) => {
-//       return res.json({ name });
-//     })
-//     .catch((err) => {
-//       throw err.message;
-//     });
-// });
-
-// router.post('/', (req, res) => {
-//     return res.send({
-        
-//     })
-// })
-
-// router.delete('/:', (req, res) => {
-//     return res.send(`Delete name with id ${req.params.}`)
-// })
-
-// router.put("/", function(req, res) {
-
-// })
+router.put("/:id", function(req, res) {
+  let id = req.params.id
+  let names = req.body.name
+  Name.findOneAndUpdate({_id:id},{name:names}).then(updates => {
+    console.log(updates)
+    return res.json(updates)
+  })
+  .catch((err) => {
+    throw err.message
+  })
+})
 
 module.exports = router;
