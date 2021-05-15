@@ -14,6 +14,8 @@ docsify init ./docs
 
 docsify serve docs   
 <br>
+OR
+<br>
 
 [Link to the Docsify](http://bitbybit.codes/BurningManApi/)
 
@@ -29,13 +31,13 @@ docsify serve docs
 
  Request | Endpoint | Description
  ----------- | ----------- | -----------
- `GET` | / | Returns a list of all the tables and their orders.
- `GET` | /:id | Returns a single table and its associated order.
+ `GET` | / | Returns a list of all names.
+ `GET` | /:id | Returns 1 name.
  `POST` | /new | Creates a post.
  `PUT` | /:id | Updates a post.
  `DELETE` | /:id | Deletes a post.
 
- ### View ALL Tables
+ ### View ALL Name
 
 GET`http://localhost:3001/`<br><br>
 
@@ -50,7 +52,7 @@ Response: Success (200)
         "__v": 0
     }
 ```
-### Create New Table
+### Create New Name
 
 POST`http://localhost:3001/new`<br><br>
 
@@ -60,7 +62,7 @@ name | `"Donny"` | str
 
 > Returns the name
 
-### Update Table
+### Update Name
 
 PUT`http://localhost:3001/:id`<br><br>
 *> make sure you paste the id from the data base after /.*
@@ -71,7 +73,7 @@ name | `"Will"` | str
 
 > Returns the updated name
 
-### Delete Table
+### Delete Name
 
 DELETE`http://localhost:3001/:id`<br><br>
 *> make sure you paste the id from the data base after /.*
